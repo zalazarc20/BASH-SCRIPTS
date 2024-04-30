@@ -1,0 +1,13 @@
+[Unit]
+Description=App del negocio
+After=network.target
+
+[Service]
+ExecStart=/home/kiosco/Documentos/start_server.sh
+Restart=always
+User=kiosco
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
+
